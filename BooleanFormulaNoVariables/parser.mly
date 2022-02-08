@@ -6,8 +6,8 @@
 %token LPAREN RPAREN
 %token EOL
 %left AND OR IMPLIES        /* lowest precedence */
-%nonassoc NEG        /* highest precedence */
-%start main             /* the entry point */
+%nonassoc NEG               /* highest precedence */
+%start main                 /* the entry point */
 %type <bool> main
 %%
 main:
